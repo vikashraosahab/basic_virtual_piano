@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="piano-container">
+        <div class="piano-header">
+            <h1 class="piano-title">🎹 Virtual Piano</h1>
+            <div class="controls">
+                <div class="control-group">
+                    <label class="control-label">Volume</label>
+                    <input type="range" id="volume" class="volume-slider" min="0" max="1" step="0.1" value="0.5">
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Octave</label>
+                    <select id="octave" class="octave-selector">
+                        <option value="3">Octave 3</option>
+                        <option value="4" selected>Octave 4</option>
+                        <option value="5">Octave 5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="keyboard" id="keyboard">
+            <div class="octave">
+                <!-- White keys -->
+                <button class="key white-key" data-note="C" data-freq="261.63">
+                    <span class="key-label">C</span>
+                </button>
+                <button class="key white-key" data-note="D" data-freq="293.66">
+                    <span class="key-label">D</span>
+                </button>
+                <button class="key white-key" data-note="E" data-freq="329.63">
+                    <span class="key-label">E</span>
+                </button>
+                <button class="key white-key" data-note="F" data-freq="349.23">
+                    <span class="key-label">F</span>
+                </button>
+                <button class="key white-key" data-note="G" data-freq="392.00">
+                    <span class="key-label">G</span>
+                </button>
+                <button class="key white-key" data-note="A" data-freq="440.00">
+                    <span class="key-label">A</span>
+                </button>
+                <button class="key white-key" data-note="B" data-freq="493.88">
+                    <span class="key-label">B</span>
+                </button>
+
+                <!-- Black keys -->
+                <button class="key black-key" data-note="C#" data-freq="277.18">
+                    <span class="key-label">C#</span>
+                </button>
+                <button class="key black-key" data-note="D#" data-freq="311.13">
+                    <span class="key-label">D#</span>
+                </button>
+                <button class="key black-key" data-note="F#" data-freq="369.99">
+                    <span class="key-label">F#</span>
+                </button>
+                <button class="key black-key" data-note="G#" data-freq="415.30">
+                    <span class="key-label">G#</span>
+                </button>
+                <button class="key black-key" data-note="A#" data-freq="466.16">
+                    <span class="key-label">A#</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <div>🎵 Click the keys or use your keyboard to play!</div>
+            <div class="keyboard-hint">
+                <strong>Keyboard controls:</strong><br>
+                White keys: A S D F G H J<br>
+                Black keys: W E T Y U
+            </div>
+        </div>
+    </div>
+</body>
+</html>
