@@ -1,4 +1,5 @@
-![Uploading Screenshot from 2025-07-26 15-29-24.png…]()
+<img width="1920" height="1080" alt="Screenshot from 2025-07-26 15-29-24" src="https://github.com/user-attachments/assets/79591856-4ec1-40df-9178-05548e58878e" />
+
 
 🎹✨ First AI-Generated Project – Virtual Piano Web App!
 
